@@ -1,7 +1,7 @@
 import Courses from "./Courses";
 
-const CoursesWrapper = (root) => {
-  const courses = Courses();
+const CoursesWrapper = async (root) => {
+  const courses = await Courses();
 
   courses.forEach((course) => root.appendChild(course));
 };
